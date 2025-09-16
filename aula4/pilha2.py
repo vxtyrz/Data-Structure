@@ -9,7 +9,6 @@ class Pilha:
             print("PILHA CHEIA")
             return True
         else:
-            print("PILHA NÃO ESTÁ CHEIA")
             return False
             
     def empilhar(self, valor):
@@ -42,21 +41,16 @@ class Pilha:
             self.topo = self.topo - 1
             print("O valor desempilhado é: ", self.valor)
             return self.valor
-
-pilha1 = Pilha(5)
-pilha1.desempilhar() # Impossível desempilhar, pilha vazia
-pilha1.empilhar("V")
-pilha1.empilhar("Í")
+        
+pilha1 = Pilha(4)
+pilha1.empilhar("S")
+pilha1.empilhar("A")
 pilha1.empilhar("T")
-pilha1.empilhar("O")
-pilha1.empilhar("R")
-pilha1.empilhar("!") # Impossível empilhar, pilha cheia
-pilha1.verTopo()
+pilha1.empilhar("C")
+pilha1.pilhaCheia()
 pilha1.desempilhar()
 pilha1.desempilhar()
 pilha1.desempilhar()
 pilha1.verTopo()
-
-
-
-
+pilha1.desempilhar()
+pilha1.pilhaVazia()

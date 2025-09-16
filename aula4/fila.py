@@ -11,7 +11,6 @@ class Fila:
             print("FILA CHEIA")
             return True
         else:
-            print("FILA NÃO ESTÁ CHEIA")
             return False
         
     def filaVazia(self):
@@ -19,12 +18,11 @@ class Fila:
             print("FILA VAZIA")
             return True
         else:
-            print("FILA NÃO VAZIA")
             return False
         
     def enfileirar(self, valor):
         if self.filaCheia():
-            print("ERRO DE FILA CHEIA")
+            print("TENTATIVA DE ENFILEIRAR NOVO ELEMENTO: ERRO DE FILA CHEIA")
             return
         if self.fim == self.capacidade - 1:
             self.fim = -1
@@ -34,7 +32,7 @@ class Fila:
     
     def desenfileirar(self):
         if self.filaVazia():
-            print("ERRO DE FILA VAZIA")
+            print("TENTATIVA DE DESENFILEIRAR: ERRO DE FILA VAZIA")
             return
         temp = self.valores[self.inicio]
         self.inicio = self.inicio + 1
@@ -50,12 +48,17 @@ class Fila:
             return
         return self.valores[self.inicio]
 
-fila = Fila(3)
-fila.enfileirar(10)
-fila.enfileirar(20)
-fila.enfileirar(30)
-print(fila.verPrimeiro())  
-print(fila.desenfileirar())  
-fila.enfileirar(40)
-print(fila.verPrimeiro())
+fila = Fila(5)
+fila.desenfileirar()
+fila.enfileirar("V")
+fila.enfileirar("Í")
+fila.enfileirar("T")
+fila.enfileirar("O")
+fila.enfileirar("R")
+fila.enfileirar("!")
+print("PRIMEIRO ELEMENTO: ", fila.verPrimeiro())  
 print("FILA: ", fila.valores)
+fila.desenfileirar()
+fila.desenfileirar()
+fila.desenfileirar()
+print("PRIMEIRO ELEMENTO: ", fila.verPrimeiro())
