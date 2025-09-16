@@ -1,5 +1,5 @@
 class Pilha:
-    def __init__(self, capacidade = 4):
+    def __init__(self, capacidade):
         self.capacidade = capacidade
         self.topo = -1
         self.valores = capacidade * [0]
