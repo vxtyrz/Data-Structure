@@ -1,5 +1,4 @@
 def Multip_Rec(n1, n2):
-    # Caso base
     if n2 == 0:
         return 0
 
