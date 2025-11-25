@@ -44,29 +44,29 @@ def reconstruir_caminho(caminho_anterior, inicio, destino):
 
 if __name__ == "__main__":
     g = Grafo()
-    g.adicionar_aresta("Criciuma", "Laguna", 4)
-    g.adicionar_aresta("Criciuma", "Formosa", 8)
+    g.adicionar_aresta("CriciÃºma", "Laguna", 4)
+    g.adicionar_aresta("CriciÃºma", "Formosa", 8)
     
-    g.adicionar_aresta("Laguna", "Palhoça", 8)
+    g.adicionar_aresta("Laguna", "PalhoÃ§a", 8)
     g.adicionar_aresta("Laguna", "Formosa", 11)
     
     g.adicionar_aresta("Formosa", "Xique-Xique", 7)
-    g.adicionar_aresta("Formosa", "Goiania", 1)
+    g.adicionar_aresta("Formosa", "GoiÃ¢nia", 1)
     
-    g.adicionar_aresta("Palhoça", "Xique-Xique", 2)
-    g.adicionar_aresta("Palhoça", "Blumenau", 7)
-    g.adicionar_aresta("Palhoça", "Araçatuba", 4)
+    g.adicionar_aresta("PalhoÃ§a", "Xique-Xique", 2)
+    g.adicionar_aresta("PalhoÃ§a", "Blumenau", 7)
+    g.adicionar_aresta("PalhoÃ§a", "AraÃ§atuba", 4)
     
-    g.adicionar_aresta("Xique-Xique", "Goiania", 6)
+    g.adicionar_aresta("Xique-Xique", "GoiÃ¢nia", 6)
     
-    g.adicionar_aresta("Goiania", "Aracatuba", 2)
+    g.adicionar_aresta("GoiÃ¢nia", "AraÃ§atuba", 2)
     
-    g.adicionar_aresta("Aracatuba", "Blumenau", 14)
-    g.adicionar_aresta("Aracatuba", "Curitiba", 10)
+    g.adicionar_aresta("AraÃ§atuba", "Blumenau", 14)
+    g.adicionar_aresta("AraÃ§atuba", "Curitiba", 10)
     
     g.adicionar_aresta("Blumenau", "Curitiba", 9)
 
-    origem = "Criciúma"
+    origem = "CriciÃºma"
     menores_distancias, predecessores = dijkstra(g, origem)
 
     print("-" * 70)

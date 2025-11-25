@@ -44,25 +44,25 @@ def reconstruir_caminho(caminho_anterior, inicio, destino):
 
 if __name__ == "__main__":
     g = Grafo()
-    g.adicionar_aresta("Criciuma", "Laguna", 4)
-    g.adicionar_aresta("Criciuma", "Formosa", 8)
+    g.adicionar_aresta("Criciúma", "Laguna", 4)
+    g.adicionar_aresta("Criciúma", "Formosa", 8)
     
     g.adicionar_aresta("Laguna", "Palhoça", 8)
     g.adicionar_aresta("Laguna", "Formosa", 11)
     
     g.adicionar_aresta("Formosa", "Xique-Xique", 7)
-    g.adicionar_aresta("Formosa", "Goiania", 1)
+    g.adicionar_aresta("Formosa", "Goiânia", 1)
     
     g.adicionar_aresta("Palhoça", "Xique-Xique", 2)
     g.adicionar_aresta("Palhoça", "Blumenau", 7)
     g.adicionar_aresta("Palhoça", "Araçatuba", 4)
     
-    g.adicionar_aresta("Xique-Xique", "Goiania", 6)
+    g.adicionar_aresta("Xique-Xique", "Goiânia", 6)
     
-    g.adicionar_aresta("Goiania", "Aracatuba", 2)
+    g.adicionar_aresta("Goiânia", "Araçatuba", 2)
     
-    g.adicionar_aresta("Aracatuba", "Blumenau", 14)
-    g.adicionar_aresta("Aracatuba", "Curitiba", 10)
+    g.adicionar_aresta("Araçatuba", "Blumenau", 14)
+    g.adicionar_aresta("Araçatuba", "Curitiba", 10)
     
     g.adicionar_aresta("Blumenau", "Curitiba", 9)
 
